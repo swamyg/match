@@ -4,7 +4,7 @@ class User
   LOGIC = {
       straight: { opposite: [:straight, :bi], same: [] },
       gay: { opposite: [], same: [:gay, :bi] },
-      bi: { opposite: [:bi, :straight], same: [:gay, :bi, :straight] }
+      bi: { opposite: [:bi, :straight], same: [:gay, :bi] }
   }
 
   def initialize(gender, orientation)
