@@ -36,6 +36,10 @@ class User
 
     @users = [@straight_guy, @straight_girl, @bi_guy, @bi_girl, @gay_guy, @gay_girl]
 
+    @users.each do |user|
+      puts "#{user.kind} with #{user.kind} : #{match_them(user, user)}"
+    end
+
     @users.combination(2).each do |user1, user2|
       puts "#{user1.kind} with #{user2.kind} : #{match_them(user1, user2)}"
     end
